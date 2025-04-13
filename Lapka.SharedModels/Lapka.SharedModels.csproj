@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DTO\Amazon\**" />
+    <Compile Remove="Models\Filters\**" />
+    <Compile Remove="Models\Http\**" />
+    <EmbeddedResource Remove="DTO\Amazon\**" />
+    <EmbeddedResource Remove="Models\Filters\**" />
+    <EmbeddedResource Remove="Models\Http\**" />
+    <None Remove="DTO\Amazon\**" />
+    <None Remove="Models\Filters\**" />
+    <None Remove="Models\Http\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Enums\" />
+  </ItemGroup>
+
+</Project>
+
